@@ -1,4 +1,4 @@
-package com.fpl.statistics.fpls.entity.classes;
+package com.fpl.statistics.fpls.player;
 
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -10,4 +10,12 @@ public class PlayerFixtures {
 
     @Field(value = "fixtures")
     private List<PlayerRemainingFixture> playerRemainingFixtures;
+
+    public List<PlayerHistoryFixture> getPlayerHistoryFixtureList() {
+        return playerHistoryFixtureList;
+    }
+
+    public List<PlayerRemainingFixture> getPlayerRemainingFixtures() {
+        return playerRemainingFixtures;
+    }
 }
