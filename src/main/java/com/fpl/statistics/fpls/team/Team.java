@@ -1,4 +1,4 @@
-package com.fpl.statistics.fpls.entity;
+package com.fpl.statistics.fpls.team;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;

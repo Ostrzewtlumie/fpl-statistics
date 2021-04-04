@@ -1,4 +1,4 @@
-package com.fpl.statistics.fpls.entity.classes;
+package com.fpl.statistics.fpls.player;
 
 public class PlayerRemainingFixture {
     private int team_h;

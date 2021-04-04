@@ -1,6 +1,5 @@
-package com.fpl.statistics.fpls.entity;
+package com.fpl.statistics.fpls.fixture;
 
-import com.fpl.statistics.fpls.entity.classes.MatchStats;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 

@@ -1,7 +1,5 @@
-package com.fpl.statistics.fpls.entity;
+package com.fpl.statistics.fpls.player;
 
-import com.fpl.statistics.fpls.entity.classes.PlayerDetails;
-import com.fpl.statistics.fpls.entity.classes.PlayerFixtures;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
