@@ -20,4 +20,16 @@ public class Player {
     public PlayerDetails getPlayer() {
         return playerDetails;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public PlayerDetails getPlayerDetails() {
+        return playerDetails;
+    }
+
+    public PlayerFixtures getPlayerFixtures() {
+        return playerFixtures;
+    }
 }

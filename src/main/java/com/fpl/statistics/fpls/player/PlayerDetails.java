@@ -88,4 +88,124 @@ public class PlayerDetails {
     public int getId() {
         return id;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public int getChanceOfPlayingNext() {
+        return chanceOfPlayingNext;
+    }
+
+    public int getChanceOfPlayingThisRound() {
+        return chanceOfPlayingThisRound;
+    }
+
+    public int getPostion() {
+        return postion;
+    }
+
+    public int getPointsGameWeek() {
+        return pointsGameWeek;
+    }
+
+    public String getForm() {
+        return form;
+    }
+
+    public String getCost() {
+        return cost;
+    }
+
+    public String getPointsPerGame() {
+        return pointsPerGame;
+    }
+
+    public String getSelectedByPercent() {
+        return selectedByPercent;
+    }
+
+    public int getTeam() {
+        return team;
+    }
+
+    public String getSeasonValue() {
+        return seasonValue;
+    }
+
+    public String getFormValue() {
+        return formValue;
+    }
+
+    public int getMinutes() {
+        return minutes;
+    }
+
+    public int getGoals() {
+        return goals;
+    }
+
+    public int getAssists() {
+        return assists;
+    }
+
+    public int getCleanSheets() {
+        return cleanSheets;
+    }
+
+    public int getGoalsConceded() {
+        return goalsConceded;
+    }
+
+    public int getOwnGoals() {
+        return ownGoals;
+    }
+
+    public int getPenaltiesSaved() {
+        return penaltiesSaved;
+    }
+
+    public int getPenaltiesMissed() {
+        return penaltiesMissed;
+    }
+
+    public int getYellowCards() {
+        return yellowCards;
+    }
+
+    public int getRedCards() {
+        return redCards;
+    }
+
+    public int getSaves() {
+        return saves;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public String getInfluence() {
+        return influence;
+    }
+
+    public String getCreativity() {
+        return creativity;
+    }
+
+    public String getThreat() {
+        return threat;
+    }
 }
