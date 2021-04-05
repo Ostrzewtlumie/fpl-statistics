@@ -1,5 +1,6 @@
 package com.fpl.statistics.fpls.player;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -15,5 +16,5 @@ public interface PlayerRepository extends MongoRepository<Player, String> {
     List<Player> findAllUnavailable();
 
     @Query("{ 'player.element_type' : ?0 }")
-    List<Player> findAllByPosition(int position);
+    List<Player> findAllByPosition(int position, Sort sort);
 }
