@@ -14,4 +14,8 @@ public class Position {
     public String getId() {
         return id;
     }
+
+    public String getPluralName() {
+        return pluralName;
+    }
 }
