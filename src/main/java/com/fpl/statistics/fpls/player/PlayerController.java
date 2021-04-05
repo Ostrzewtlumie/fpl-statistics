@@ -1,9 +1,6 @@
 package com.fpl.statistics.fpls.player;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,20 +14,24 @@ public class PlayerController {
     }
 
     @GetMapping("/available")
+    @ResponseBody
     public List<Player> getAvailablePlayers()
     {
         return playerService.getAvailablePlayers();
     }
 
     @GetMapping("/unavailable")
+    @ResponseBody
     public List<Player> getUnavailablePlayers()
     {
         return playerService.getUnavailablePlayers();
     }
 
     @GetMapping("/{position}")
-    public List<Player> getPlayersByPosition(@PathVariable final String position)
+    @ResponseBody
+    public List<Player> getPlayersByPosition(@PathVariable final String position,
+                                             @RequestParam final String sort)
     {
-        return playerService.getByPosition(position);
+        return playerService.getByPosition(position, sort);
     }
 }
