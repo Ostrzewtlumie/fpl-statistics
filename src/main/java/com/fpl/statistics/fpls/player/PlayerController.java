@@ -18,4 +18,10 @@ public class PlayerController {
     {
         return playerService.getAvailablePlayers();
     }
+
+    @GetMapping("/unavailable")
+    public List<Player> getUnavailablePlayers()
+    {
+        return playerService.getUnavailablePlayers();
+    }
 }

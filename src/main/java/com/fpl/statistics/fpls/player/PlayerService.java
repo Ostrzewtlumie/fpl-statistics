@@ -16,4 +16,9 @@ public class PlayerService {
     {
         return playerRepository.findAllAvailable();
     }
+
+    public List<Player> getUnavailablePlayers()
+    {
+        return playerRepository.findAllUnavailable();
+    }
 }

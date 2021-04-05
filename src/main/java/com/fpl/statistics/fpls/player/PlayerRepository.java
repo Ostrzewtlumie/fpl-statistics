@@ -10,4 +10,7 @@ import java.util.List;
 public interface PlayerRepository extends MongoRepository<Player, String> {
     @Query("{ 'player.status' : {$ne : u }}")
     List<Player> findAllAvailable();
+
+    @Query("{ 'player.status' : u }")
+    List<Player> findAllUnavailable();
 }
