@@ -7,9 +7,11 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class Player {
     @Field("id")
     private String id;
-    @Field("player")
-    private PlayerDetails playerDetails;
+
     @Field("playerDetails")
+    private PlayerDetails playerDetails;
+
+    @Field("playerFixtures")
     private PlayerFixtures playerFixtures;
 
     public Player(final PlayerDetails playerDetails, final PlayerFixtures playerFixtures) {
