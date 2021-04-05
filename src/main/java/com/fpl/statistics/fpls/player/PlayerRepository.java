@@ -9,12 +9,12 @@ import java.util.List;
 
 @Repository
 public interface PlayerRepository extends MongoRepository<Player, String> {
-    @Query("{ 'player.status' : {$ne : u }}")
+    @Query("{ 'playerDetails.status' : {$ne : u }}")
     List<Player> findAllAvailable();
 
-    @Query("{ 'player.status' : u }")
+    @Query("{ 'playerDetails.status' : u }")
     List<Player> findAllUnavailable();
 
-    @Query("{ 'player.element_type' : ?0 }")
-    List<Player> findAllByPosition(int position, Sort sort);
+    @Query("{ 'playerDetails.shortName' : ?0 }")
+    List<Player> findAllByPosition(String position, Sort sort);
 }
