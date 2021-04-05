@@ -17,10 +17,6 @@ public class Player {
         this.playerFixtures = playerFixtures;
     }
 
-    public PlayerDetails getPlayer() {
-        return playerDetails;
-    }
-
     public String getId() {
         return id;
     }

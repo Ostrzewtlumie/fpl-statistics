@@ -21,7 +21,7 @@ public class PlayerDetails {
     private int chanceOfPlayingThisRound;
 
     @Field(value = "element_type")
-    private int postion;
+    private int position;
 
     @Field(value = "event_points")
     private int pointsGameWeek;
@@ -113,8 +113,8 @@ public class PlayerDetails {
         return chanceOfPlayingThisRound;
     }
 
-    public int getPostion() {
-        return postion;
+    public int getPosition() {
+        return position;
     }
 
     public int getPointsGameWeek() {

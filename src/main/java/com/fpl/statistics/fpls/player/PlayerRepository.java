@@ -13,4 +13,7 @@ public interface PlayerRepository extends MongoRepository<Player, String> {
 
     @Query("{ 'player.status' : u }")
     List<Player> findAllUnavailable();
+
+    @Query("{ 'player.element_type' : ?0 }")
+    List<Player> findAllByPosition(int position);
 }
